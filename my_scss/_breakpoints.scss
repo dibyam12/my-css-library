@@ -1,0 +1,66 @@
+$breakpoints: (
+  "xs": 0,
+  "sm": 480px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1200px,
+);
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints,"xs")) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (min-width: map-get($breakpoints,"sm")) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: map-get($breakpoints,"md")) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: map-get($breakpoints,"lg")) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: map-get($breakpoints,"xl")) {
+    @content;
+  }
+}
+
+@mixin breakpoint($bp: 0) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+.changing-colors {
+  @include xs() {
+    color: $primary;
+    background-color: light-comp($primary);
+  }
+  @include sm() {
+    color: red;
+    background-color: light-comp(red);
+  }
+  @include md() {
+    color: blue;
+    background-color: light-comp(blue);
+  }
+  @include lg() {
+    color: green;
+    background-color: light-comp(green);
+  }
+  @include xl() {
+    background-color: light-comp(purple);
+    color: purple;
+  }
+  @include breakpoint(1400px) {
+    color: pink;
+    background-color: light-comp(pink);
+  }
+}

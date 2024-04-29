@@ -1,0 +1,62 @@
+// variables & functions
+@import "functions";
+@import "variables";
+
+//base and layout
+@import "base";
+@import "breakpoints";
+@import "grid";
+
+//colors
+@import "colors";
+
+//components(button,card,navbar)
+@import "components/card";
+@import "components/button";
+@import "components/navbar";
+
+//utilities(margin,padding,opacity)
+@import "utilities";
+
+//-----------------------------------------------------------
+/* 
+h1 {
+  color: $primary;
+  margin-bottom: $base-margin;
+}
+a {
+  color: $secondary;
+  margin-bottom: $base-margin;
+}
+button {
+  color: white;
+  background: $primary;
+  border: 0;
+  border-radius: $base-border-radius;
+  padding: $base-padding;
+}
+
+.error {
+  color: whitesmoke;
+  background-color: $error;
+  border-color: $error;
+  margin: $base-margin;
+  border-style: solid;
+  border-radius: $base-border-radius;
+  border-width: $base-border-thickness;
+  text-align: $text-center;
+  padding: $base-padding;
+}
+
+.notification {
+  color: whitesmoke;
+  background-color: $secondary;
+  border-color: $secondary;
+  padding: $base-padding;
+  margin: $base-margin;
+  border-radius: $base-border-radius;
+  border-style: solid;
+  border-width: $base-border-thickness;
+  text-align: $text-center;
+}
+ */
